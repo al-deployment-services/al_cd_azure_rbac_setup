@@ -22,7 +22,7 @@ Sample ADD Usage
 ----------------
 Replace the parameters to match your environment and run this command ::
 
-		python al_cd_azure_rbac_setup.py ADD --user first.last@company.com --pswd MyCloudInsightPassword --cid 10000 --sub_id b69ed5af-5843-4b90-bf1f-7b8f81731bbd --ad_name companyname.onmicrosoft.com --ad_user user@companyname.onmicrosoft.com --ad_pswd P@s$w0rd --cred TestArgCred --env TestEnv --dc defender-us-ashburn
+	python al_cd_azure_rbac_setup.py ADD --user first.last@company.com --pswd MyCloudInsightPassword --cid 10000 --sub_id b69ed5af-5843-4b90-bf1f-7b8f81731bbd --ad_name companyname.onmicrosoft.com --ad_user user@companyname.onmicrosoft.com --ad_pswd P@s$w0rd --cred TestArgCred --env TestEnv --dc defender-us-ashburn
 
 Arguments
 ----------
@@ -31,9 +31,9 @@ Arguments
 	--pswd PSWD      	 Password for API Authentication
 	--cid CID        	 Alert Logic Customer CID as target for this deployment
 	--sub_id AZURE   	 Azure subscription ID where the RBAC is created
-	--ad_name AD_NAME 	Active Directory default name
-	--ad_user AD_USER 	Username of a user that represents Alert Logic in Active Directory Tenant
-	--ad_pswd AD_PSWD 	Password of a user that represents Alert Logic in Active Directory Tenant
+	--ad_name AD_NAME 	 Active Directory default name
+	--ad_user AD_USER 	 Username of a user that represents Alert Logic in Active Directory Tenant
+	--ad_pswd AD_PSWD 	 Password of a user that represents Alert Logic in Active Directory Tenant
 	--cred CRED      	 Credential name, free form label, not visible in Alert Logic UI
 	--env ENV        	 Environment name, will be displayed in Alert Logic UI under Deployment
 	--dc DC          	 Alert Logic Data center assignment, i.e. defender-us-denver, defender-us-ashburn or defender-uk-newport
@@ -44,15 +44,15 @@ Sample DEL Usage
 ----------------
 Replace the parameters to match your environment and run this command ::
 
-		python al_cd_azure_rbac_setup.py DEL --user first.last@company.com --pswd MyCloudInsightPassword --cid 10000 --envid 833CE538-04B4-441F-8318-DBFCB9C9B39C
+	python al_cd_azure_rbac_setup.py DEL --user first.last@company.com --pswd MyCloudInsightPassword --cid 10000 --envid 833CE538-04B4-441F-8318-DBFCB9C9B39C
 
 Arguments
 ----------
 	-h, --help   	show this help message and exit
 	--user USER  	User name / email address for API Authentication
 	--pswd PSWD  	Password for API Authentication
-	--cid CID        Alert Logic Customer CID as target for this deployment
-	--envid ENVUD    Environment ID that you wish to delete
+	--cid CID       Alert Logic Customer CID as target for this deployment
+	--envid ENVUD   Environment ID that you wish to delete
 
 Exit Code
 ----------
